@@ -1,0 +1,17 @@
+{
+  "name": "show-me",
+  "version": "1.0.0",
+  "description": "Point your phone at a confusing UK government screen and Show Me points at the exact button to tap, in your language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jpeg-js": "^0.4.4",
+    "tesseract.js": "^5.1.1"
+  }
+}

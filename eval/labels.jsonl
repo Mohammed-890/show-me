@@ -1,0 +1,16 @@
+{"file":"ctax-01-cookies.jpg","task":"council-tax","step":"cookies","target":{"x":30,"y":770,"w":690,"h":76},"targetText":"Reject additional cookies","url":"https://www.gov.uk/council-tax-bands"}
+{"file":"ctax-02-start.jpg","task":"council-tax","step":"start","target":{"x":30,"y":772,"w":690,"h":80},"targetText":"Start now","url":"https://www.gov.uk/council-tax-bands"}
+{"file":"ctax-03-start-scroll.jpg","task":"council-tax","step":"start","target":null,"expect":"scroll_down","targetText":"Start now","url":"https://www.gov.uk/council-tax-bands"}
+{"file":"ctax-04-hmrc-cookies.jpg","task":"council-tax","step":"cookies","target":{"x":30,"y":480,"w":690,"h":76},"targetText":"Reject additional cookies","url":"https://www.tax.service.gov.uk/check-council-tax-band/search"}
+{"file":"ctax-05-postcode.jpg","task":"council-tax","step":"enter_postcode","target":{"x":30,"y":1233,"w":437,"h":80},"targetText":"(postcode box)","url":"https://www.tax.service.gov.uk/check-council-tax-band/search"}
+{"file":"ctax-06-search.jpg","task":"council-tax","step":"search","target":{"x":30,"y":1353,"w":690,"h":76},"targetText":"Search","url":"https://www.tax.service.gov.uk/check-council-tax-band/search"}
+{"file":"gp-01-cookies.jpg","task":"gp-register","step":"cookies","target":{"x":32,"y":635,"w":424,"h":96},"targetText":"Reject analytics cookies","url":"https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/"}
+{"file":"gp-02-find.jpg","task":"gp-register","step":"find_gp","target":{"x":32,"y":788,"w":508,"h":48},"targetText":"Find a GP to register with","url":"https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/"}
+{"file":"gp-03-postcode.jpg","task":"gp-register","step":"enter_postcode","target":{"x":32,"y":559,"w":375,"h":80},"targetText":"(postcode box)","url":"https://www.nhs.uk/service-search/find-a-gp"}
+{"file":"gp-04-search.jpg","task":"gp-register","step":"search","target":{"x":32,"y":687,"w":686,"h":88},"targetText":"Search","url":"https://www.nhs.uk/service-search/find-a-gp"}
+{"file":"gp-05-results.jpg","task":"gp-register","step":"choose_surgery","target":{"x":98,"y":788,"w":549,"h":48},"targetText":"Register online with this GP","url":"https://www.nhs.uk/service-search/find-a-gp/results?location=S1%201WB"}
+{"file":"gp-06-human-check.jpg","task":"gp-register","step":"human_check","target":{"x":275,"y":636,"w":231,"h":62},"targetText":"Begin","url":"https://gp-registration.nhs.uk/C88007001"}
+{"file":"evisa-01-guide.jpg","task":"evisa","step":"open_service","target":{"x":30,"y":751,"w":690,"h":122},"targetText":"View your eVisa and get a share code","url":"https://www.gov.uk/evisa/view-evisa-get-share-code-prove-immigration-status"}
+{"file":"evisa-02-cookies.jpg","task":"evisa","step":"cookies","target":{"x":30,"y":640,"w":690,"h":76},"targetText":"Reject all","url":"https://user-auth.apply-to-visit-or-stay-in-the-uk.homeoffice.gov.uk/"}
+{"file":"evisa-03-document.jpg","task":"evisa","step":"choose_document","target":{"x":30,"y":268,"w":690,"h":472},"targetText":"(document options)","url":"https://user-auth.apply-to-visit-or-stay-in-the-uk.homeoffice.gov.uk/"}
+{"file":"evisa-04-continue.jpg","task":"evisa","step":"continue","target":{"x":30,"y":780,"w":690,"h":76},"targetText":"Continue","url":"https://user-auth.apply-to-visit-or-stay-in-the-uk.homeoffice.gov.uk/"}

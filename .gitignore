@@ -1,0 +1,4 @@
+node_modules/
+.tess-cache/
+*.traineddata.cache
+.DS_Store

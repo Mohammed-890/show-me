@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Show Me – help with UK government websites</title>
+  <meta name="description" content="Stuck on a GOV.UK or NHS website? Add a screenshot and Show Me points at the exact button to tap, in your language. Your screenshot never leaves your phone.">
+  <meta name="theme-color" content="#14213D">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213D'/%3E%3Cellipse cx='32' cy='33' rx='21' ry='13' fill='none' stroke='%23FFD43B' stroke-width='6' transform='rotate(-8 32 33)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="brand" href="./" aria-label="Show Me home">
+      <svg viewBox="0 0 64 40" width="44" height="28" aria-hidden="true"><ellipse cx="32" cy="21" rx="27" ry="14" fill="none" stroke="currentColor" stroke-width="6" transform="rotate(-6 32 21)"/></svg>
+      <span>Show Me</span>
+    </a>
+    <nav class="langs" aria-label="Language"></nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- 1. Choose a task -->
+    <section id="view-home" class="view">
+      <h1 data-t="headline"></h1>
+      <p class="lede" data-t="lede"></p>
+      <h2 class="ask" data-t="chooseTask"></h2>
+      <ul class="tasks" role="list"></ul>
+      <p class="privacy"><span aria-hidden="true">🔒</span> <span data-t="privacy"></span></p>
+    </section>
+
+    <!-- 2. Add a screenshot -->
+    <section id="view-task" class="view" hidden>
+      <button class="back" type="button" data-action="home"><span aria-hidden="true">‹</span> <span data-t="back"></span></button>
+      <h1 class="task-title"></h1>
+      <ol class="how" role="list">
+        <li><span data-t="how1"></span> <a class="open-site" target="_blank" rel="noopener"></a></li>
+        <li data-t="how2"></li>
+        <li data-t="how3"></li>
+      </ol>
+      <label class="primary file">
+        <input type="file" accept="image/*" class="file-input">
+        <span data-t="addShot"></span>
+      </label>
+      <button class="secondary" type="button" data-action="example"><span data-t="tryExample"></span></button>
+      <p class="privacy small"><span aria-hidden="true">🔒</span> <span data-t="privacy"></span></p>
+    </section>
+
+    <!-- 3. Reading -->
+    <section id="view-working" class="view" hidden aria-live="polite">
+      <div class="reading">
+        <svg viewBox="0 0 64 40" width="96" height="60" aria-hidden="true" class="spin"><ellipse cx="32" cy="21" rx="27" ry="14" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="20 120" transform="rotate(-6 32 21)"/></svg>
+        <p data-t="reading"></p>
+        <p class="muted small" data-t="readingFirst"></p>
+      </div>
+    </section>
+
+    <!-- 4. Result -->
+    <section id="view-result" class="view" hidden>
+      <button class="back" type="button" data-action="task"><span aria-hidden="true">‹</span> <span data-t="back"></span></button>
+      <p class="say" aria-live="polite"></p>
+      <div class="actions-row">
+        <button class="secondary speak" type="button" data-action="speak"><span aria-hidden="true">🔊</span> <span data-t="readAloud"></span></button>
+      </div>
+      <div class="shot-frame" tabindex="0" data-t-aria="shotLabel">
+        <canvas class="shot"></canvas>
+      </div>
+      <label class="primary file">
+        <input type="file" accept="image/*" class="file-input">
+        <span data-t="nextShot"></span>
+      </label>
+      <button class="secondary example-next" type="button" data-action="example"><span data-t="nextExample"></span></button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <details>
+      <summary data-t="howWorks"></summary>
+      <div class="foot-body">
+        <p>Show Me reads the screenshot on your device (OCR with Tesseract), works out which page of the task you are on, and points at the button named in a step guide written from the real GOV.UK and NHS pages. It never invents a button.</p>
+        <table>
+          <caption>Tested on 80 real screenshots (16 captured pages and 64 harder variants)</caption>
+          <thead><tr><th scope="col">Method</th><th scope="col">Points at the right thing</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Show Me</th><td>99% (79 of 80)</td></tr>
+            <tr><th scope="row">Show Me without “already done?” checks</th><td>80%</td></tr>
+            <tr><th scope="row">“First action button” baseline</th><td>20%</td></tr>
+          </tbody>
+        </table>
+        <p>Not an official government or NHS service. Built by <a href="https://www.linkedin.com/in/mohammed-banabilh-6340553b0/">Mohammed Banabilh</a>. <a href="https://github.com/Mohammed-890/show-me">Source code and full results</a>.</p>
+      </div>
+    </details>
+  </footer>
+
+  <script src="vendor/tesseract.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
